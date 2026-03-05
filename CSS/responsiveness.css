@@ -1,0 +1,285 @@
+/* Tablet down */
+@media (max-width: 992px) {
+  .hero-content {
+    padding: 40px 28px;
+    gap: 20px;
+  }
+
+  .hero-txt {
+    margin-bottom: 0;
+    line-height: 1.7;
+  }
+
+  .category {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cat {
+    max-width: 280px;
+  }
+
+  .CTA-content {
+    gap: 20px;
+    padding: 24px 20px;
+  }
+
+  .shopping-ads {
+    flex-direction: column;
+  }
+
+  .shopping-ad {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* Mobile filter trigger becomes visible */
+  .filterIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--bg-section);
+    border: 1px solid var(--border-light);
+  }
+
+  /* Keep button list hidden until slider icon is tapped */
+  .filter-btns {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    min-width: 80px;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
+    background-color: var(--bg-section);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+  }
+
+  /* Anchor the dropdown panel to the filter header row */
+  .filters {
+    position: relative;
+    gap: 10px;
+  }
+
+  .filter-btns button {
+    width: 100%;
+    text-align: left;
+    border-radius: 8px;
+    padding: 10px 12px;
+  }
+
+  .search-input input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  header {
+    padding: 14px 16px;
+  }
+
+  .nav-icons {
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 10px 12px;
+  }
+
+  .hero-content {
+    width: 100%;
+    object-fit: cover;
+    flex-direction: column;
+    padding: 16px 20px;
+    text-align: center;
+  }
+
+  .hero .hero-img {
+    position: relative;
+    left: 20px;
+    max-width: 280px;
+  }
+
+  .hero-txt {
+    padding: 16px 20px;
+    line-height: 1.8em;
+  }
+
+  .hero-txt h1 {
+    line-height: 1.4em;
+  }
+
+  .hero-float {
+    display: none;
+  }
+
+  .store-highlights {
+    margin: 12px;
+    padding: 12px;
+    gap: 12px;
+    overflow-x: hidden;
+  }
+
+  .store-highlights-wrapper {
+    padding: 0 12px;
+  }
+
+  .arrow {
+    display: block;
+  }
+
+  .highlight {
+    width: calc(50% - 6px);
+    flex-direction: row;
+  }
+
+  .shopping-category,
+  .shopping-cart,
+  .shopping-ads,
+  .newsletter-section {
+    padding: 12px;
+  }
+
+  /* Improve filter row rhythm on phone widths */
+  .filters {
+    align-items: flex-start;
+  }
+
+  .filter-txt p {
+    line-height: 1.2;
+  }
+
+  .category {
+    padding: 12px 0;
+    gap: 12px;
+  }
+
+  .cat {
+    max-width: 100%;
+  }
+
+  .shop-CTA {
+    padding: 12px;
+  }
+
+  .CTA-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .CTA-txt {
+    line-height: 1.8;
+  }
+
+  .CTA-img {
+    position: relative;
+    max-width: 260px;
+  }
+
+  .cart-item img {
+    max-width: 100%;
+  }
+
+  .shopping-ad {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .shopping-ad img {
+    padding: 8px;
+    max-width: 280px;
+  }
+
+  .newsletter-content {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .newsletter-txt {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .newsletter-img {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .footer {
+    margin-top: 12px;
+    padding: 18px 12px 0;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 600px) {
+  .logo h2 {
+    letter-spacing: 2px;
+  }
+
+  /* Let dropdown use full row on compact screens */
+  .filter-btns,
+  .filter-btns.active {
+    left: 0;
+    right: 0;
+    min-width: 0;
+  }
+
+  .highlight {
+    width: 100%;
+  }
+
+  .shopping-ad h5 {
+    min-height: auto;
+  }
+
+  .shopping-ad p {
+    min-height: auto;
+  }
+
+  .addTocart-btn {
+    padding: 9px 10px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 420px) {
+  header {
+    padding: 12px;
+  }
+
+  .nav-icons {
+    gap: 8px;
+  }
+
+  .hero-content {
+    padding: 20px 14px;
+  }
+
+  .view-all-container {
+    padding: 14px 8px;
+  }
+
+  .view-all-container .view-all-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

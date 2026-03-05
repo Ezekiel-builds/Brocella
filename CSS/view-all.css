@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+.product-search {
+    display: flex;
+    padding: 16px 20px;
+    background-color: #fff;
+}
+
+.search-input {
+    flex-grow: 1;
+}
+
+.search-input input {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 8px;
+    font-size: clamp(14px, 2vw, 18px);
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.search-input input:focus {
+    background-color: #fff;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.search-input input::placeholder {
+    color: #888;
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+.cart-item.active {
+    display: none;
+}
+
+#message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 20px;
+    font-size:  clamp(1.25rem, 2.1vw, 1.75rem);
+    font-weight: 800;
+}
